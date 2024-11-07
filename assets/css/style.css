@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #cebfb6, #b2c1a0bc);
+    !important;
+}
+
+.arj-boxshadow {
+    box-shadow: 0px 0px 4px #2b2b2b71;
+}
+
+.arj-container {
+    min-height: 100vh;
+    max-width: 100vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arj--container {
+    min-height: 50vh;
+    padding: 0% !important;
+    box-shadow: 0px 0px 25px 20px #fcf9f971, 0px 0px 35px 20px #b2c1a0bc;
+    border: .5px solid #bc6b2512;
+}
+
+.arj-login {
+    background-color: #ffffff;
+    position: relative;
+    justify-content: center;
+}
+
+.arj-section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    max-height: 50% !important;
+    margin: auto;
+    top: auto;
+}
+
+.arj-min-fs {
+    font-size: 13px;
+    border: none;
+    top: 3px;
+}
+
+.arj-input:hover{
+    background-color:whitesmoke ;
+}
+
+.arj-password {
+    font-size: 10px;
+    padding: 0;
+    margin: 0%;
+    z-index: 9;
+    top: 12px;
+    right: 5px;
+    color: rgba(0, 0, 0, 0.561);
+}
+
+.arj-password:hover{
+    color: black ;
+}
+
+.arj-icons {
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+::placeholder {
+    font-size: 10px;
+}
+
+label,
+input {
+    padding: 5px;
+    top: 10px;
+    z-index: 9;
+    max-width: 100%;
+}
+
+.arj-btn {
+    background-color: #000000;
+    color: white !important;
+    transition-property: width, background-color; /* Specify the properties to transition */
+    transition-duration: .5s; /* Set the duration of the transition */
+    transition-timing-function: ease; /* Set the timing function for a smooth transition */
+    box-shadow: 0px 0px 2px #5d2c2ce0;
+}
+
+.arj-btn:hover {
+    width: 200px;
+    background-color: #1c4daf;
+}
+
+.arj-others {
+    top: 9%;
+    position: relative;
+}
+
+.arj--others {
+    top: -13px;
+    left: 25%;
+    background-color: whitesmoke;
+}
+
+
+.arj-buttons .btn {
+    font-size: 12px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.848);
+    border: var(--bs-border-color);
+    max-height: 35px;
+    box-shadow: 0px 0px 2px #404837bc;
+    transition: color .4s, background-color .6s;
+}
+
+.arj-buttons .btn:hover{
+    color: rgba(255, 255, 255, 0.848);
+    background-color: black;
+} 
+
+.arj-slider {
+    background-color: rgba(255, 255, 255, 0.848);
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    object-fit: fill;
+
+}
+
+@media (max-width: 767.98px) {
+    .arj-slider {
+        display: none;
+    }
+
+    .arj-login {
+        border-radius: var(--bs-border-radius-xxl);
+        margin: auto;
+        width: 300px;
+        height: 500px;
+    }
+
+    .arj-buttons {
+        margin-top: 1.30rem !important;
+    }
+
+    .arj--container{
+        box-shadow: none;
+        border: none;
+    }
+}
